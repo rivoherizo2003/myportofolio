@@ -1,0 +1,16 @@
+.navbar-brand {
+    --bs-navbar-brand-color: #fff;
+    font-weight: 700;
+    font-family: $font-comfortaa-bold;    
+}
+
+.navbar-nav{
+    --bs-nav-link-color:#fff;
+    --bs-navbar-hover-color: #dddada;
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'> <path stroke='rgb(255,255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/> </svg>");
+}

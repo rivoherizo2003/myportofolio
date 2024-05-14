@@ -1,0 +1,53 @@
+.introducing {
+    color: white;
+    margin-top: 30%;
+
+    .hello {
+        font-family: "trainone";
+        font-size: 4rem;
+    }
+
+    .full-name {
+        font-weight: 800;
+        font-size: 4rem;
+        font-family: "comfortaa-bold";
+    }
+}
+
+.profile-img {
+    width: 448px;
+    height: 492px;
+    border-radius: 50%;
+    margin-top: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+}
+
+.jumb-vector-profile {
+    z-index: -9;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+
+    .profile-vector {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0px;
+
+        &.vector-2 {
+            background-image: url(../images/svg/vector_2.svg);
+            background-position-y: 72px;
+        }
+
+        &.vector-3 {
+            height: 499px;
+            background-size: cover;
+            background-position-y: bottom;
+            background-image: url(../images/svg/vector_3.svg);
+        }
+    }
+}
