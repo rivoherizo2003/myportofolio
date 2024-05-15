@@ -13,3 +13,21 @@
         stroke: var(--bs-btn-color);
     }
 }
+
+.btn-flat{
+    --bs-border-radius:0%;
+
+    font-family: "poppins-semibold";
+    min-width: 185px;
+    min-height: 50px;
+    align-content: center;
+}
+
+.btn-contact{
+    @extend .btn-flat;
+}
+
+.btn-purple{
+    @extend .btn-flat;
+    @include button-variant(rgb(94, 58, 238), rgb(94, 58, 238));
+}

@@ -1,16 +1,21 @@
 .introducing {
-    color: white;
+    color: #000;
     margin-top: 30%;
 
     .hello {
-        font-family: "trainone";
-        font-size: 4rem;
-    }
-
-    .full-name {
         font-weight: 800;
         font-size: 4rem;
         font-family: "comfortaa-bold";
+    }
+
+    .name{
+        color:#5E3AEE;
+    }
+
+    .about{
+        font-size: 29px;
+        color:#696969;
+        font-family: "poppins-semibold";
     }
 }
 
@@ -25,29 +30,6 @@
     background-position-y: top;
 }
 
-.jumb-vector-profile {
-    z-index: -9;
-    width: 100%;
-    height: 600px;
-    position: absolute;
-
-    .profile-vector {
-        height: 100%;
-        width: 100%;
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 0px;
-
-        &.vector-2 {
-            background-image: url(../images/svg/vector_2.svg);
-            background-position-y: 72px;
-        }
-
-        &.vector-3 {
-            height: 499px;
-            background-size: cover;
-            background-position-y: bottom;
-            background-image: url(../images/svg/vector_3.svg);
-        }
-    }
+.my-banner{
+    background-color: #F0F0F5;
 }

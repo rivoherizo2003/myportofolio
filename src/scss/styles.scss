@@ -9,8 +9,13 @@
 }
 
 @font-face {
-    font-family: "trainone";
-    src: url("../fonts/trainone/TrainOne-Regular.ttf");
+    font-family: "comfortaa-semibold";
+    src: url("../fonts/comfortaa/Comfortaa-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "poppins-semibold";
+    src: url("../fonts/poppins/Poppins-SemiBold.ttf");
 }
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
@@ -22,7 +27,7 @@ $font-comfortaa-bold: "comfortaa-bold";
 $font-trainone: "trainone";
 // 1 our variables
 $mainBlue:#5465E8;
-$body-bg:#212d8d;
+$body-bg:#fff;
 
 // 2 Add here new theme colors
 $primary-main-blue: $mainBlue;
