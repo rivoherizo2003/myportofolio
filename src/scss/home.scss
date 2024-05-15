@@ -1,11 +1,12 @@
 .introducing {
     color: #000;
-    margin-top: 30%;
+    margin-top: 20%;
 
     .hello {
         font-weight: 800;
         font-size: 4rem;
         font-family: "comfortaa-bold";
+        line-height: normal;
     }
 
     .name{
@@ -32,4 +33,30 @@
 
 .my-banner{
     background-color: #F0F0F5;
+}
+
+.score{
+    text-align: center;
+    .score-number{
+        font-size: 49px;
+        font-family: "poppins-bold";
+    }
+
+    .score-title{
+        font-size: 18px;
+        color: #BFB8B8;
+        font-family: "poppins-regular";
+    }
+}
+
+.divider{
+    height: 50px;
+}
+
+.score-container{
+    border-style: solid;
+    border-top-color: #F0F0F5;
+    border-bottom-color: #F0F0F5;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }

@@ -9,13 +9,14 @@
     --bs-btn-disabled-border-color: #0d6efd;
     --bs-gradient: none;
     --bs-btn-active-color: var(--bs-btn-color);
-    svg{
+
+    svg {
         stroke: var(--bs-btn-color);
     }
 }
 
-.btn-flat{
-    --bs-border-radius:0%;
+.btn-flat {
+    --bs-border-radius: 0%;
 
     font-family: "poppins-semibold";
     min-width: 185px;
@@ -23,11 +24,15 @@
     align-content: center;
 }
 
-.btn-contact{
+.btn-contact {
     @extend .btn-flat;
 }
 
-.btn-purple{
+.btn-purple {
     @extend .btn-flat;
     @include button-variant(rgb(94, 58, 238), rgb(94, 58, 238));
+}
+
+.custom-shadow {
+    box-shadow: -6px 9px 6px rgba(0, 0, 0, 0.1);
 }
