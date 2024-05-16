@@ -1,3 +1,7 @@
+
+:root{
+    --purple-background: #5E3AEE;
+}
 .introducing {
     color: #000;
     margin-top: 20%;
@@ -59,4 +63,54 @@
     border-bottom-color: #F0F0F5;
     border-left-color: transparent;
     border-right-color: transparent;
+}
+
+.about-me{
+    background-color: #0F1221;
+    height: 493px;
+}
+
+.column-about-me{
+    padding-top: 5rem;
+    padding-left: 6rem;
+    .rect{
+        width: 205px;
+        height: 27px;
+        background-color:var(--purple-background);
+    }
+
+    .a-bit-about-me{
+        color:white;
+        font-family: "poppins-bold";
+        font-size: 49px;
+    }
+
+    .about-me-description{
+        color: white;
+        font-family: "poppins-light";
+        justify-content: justify;
+        font-size: 20px;
+    }
+
+    .email-git{
+        color:var(--purple-background);
+        font-family: "poppins-bold";
+        font-size: 20px;
+    }
+}
+
+.skill{
+    font-family: "poppins-extrabold";
+    font-size: 49px;
+    color: var(--purple-background);
+}
+
+.skill-image-128{
+    width: 128px;
+}
+
+.container-skill{
+    .skill-box{
+        align-content: center;
+    }
 }
