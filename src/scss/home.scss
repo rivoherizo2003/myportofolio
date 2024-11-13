@@ -1,6 +1,7 @@
 
 :root{
     --purple-background: #5E3AEE;
+    --main-timeline-color: #0883FF; 
 }
 .introducing {
     color: #000;
@@ -115,6 +116,139 @@
     }
 }
 
-.contact{
-    background-color: var(--purple-background);
+/************ About me ************/
+.about-me{
+    .container-fluid{
+        height:100%;
+        .row{
+            height:100%;
+            .image-column{
+                .image-container{
+                    height:100%;
+                    align-content:center;
+                }
+            }
+        }
+    }
 }
+
+.fit-image {
+  height: auto;
+  width: 100%; /* Keeps aspect ratio */
+  object-fit: contain; /* Ensures the image fits without cropping */
+}
+/**********************************************/
+
+/**** timeline ************/
+.main-timeline:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main-timeline .timeline{
+    width: 50%;
+    padding: 60px 0 0 0;
+    margin: 0 5px 25px 0;
+    float: left;
+
+    a{
+        text-decoration:none;
+    }
+}
+
+.main-timeline .timeline-content{
+    min-height: 100px;
+    padding: 0 15px 0 0;
+    border-right: 2px solid var(--main-timeline-color);
+    display: block;
+    position: relative;
+}
+
+.main-timeline .timeline-content:hover{ text-decoration: none; }
+.main-timeline .timeline-content:before,
+.main-timeline .timeline-content:after{
+    content: '';
+    background-color: var(--main-timeline-color);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: -4px;
+    top: 0;
+}
+
+.main-timeline .timeline-content:after{
+    top: auto;
+    bottom: 0;
+}
+
+.main-timeline .timeline-year{
+    color: #fff;
+    background-color: var(--main-timeline-color);
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 3px 20px 3px 50px;
+    position: absolute;
+    right: -2px;
+    top: -60px;
+    z-index: 1;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0 50%);
+}
+
+.main-timeline .title{
+    color: var(--main-timeline-color);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+}
+
+.main-timeline .description{
+    color: #555;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.main-timeline .timeline:nth-child(even){
+    margin: 0 0 25px 5px;
+    float: right;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-content{
+    text-align: left;
+    padding: 0 0 0 15px;
+    border-left: 2px solid var(--main-timeline-color);
+    border-right: none;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-content:before,
+.main-timeline .timeline:nth-child(even) .timeline-content:after{
+    right: auto;
+    left: -4px;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-year{
+    right: auto;
+    left: -2px;
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+}
+
+.main-timeline .timeline:nth-child(2){ --main-timeline-color: #8E45B6; }
+.main-timeline .timeline:nth-child(3){ --main-timeline-color: #FF8000; }
+.main-timeline .timeline:nth-child(4){ --main-timeline-color: #FE3B0D; }
+.main-timeline .timeline:nth-child(5){ --main-timeline-color: #097b03; }
+@media screen and (max-width:767px){
+    .main-timeline .timeline,
+    .main-timeline .timeline:nth-child(even){
+        width: 100%;
+        margin: 0 0 25px;
+    }
+}
+/****************************/
