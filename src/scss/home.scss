@@ -3,6 +3,12 @@
     --purple-background: #5E3AEE;
     --main-timeline-color: #0883FF; 
 }
+
+body{
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
 .introducing {
     color: #000;
     margin-top: 20%;
@@ -208,9 +214,9 @@
 
 .main-timeline .description{
     color: #555;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 38px;
     text-align: left;
     letter-spacing: 0.5px;
     margin: 0;
@@ -252,3 +258,35 @@
     }
 }
 /****************************/
+
+/*********** responsive ************/
+@media (max-width: 576px){
+    .my-banner{
+        max-width: 540px;
+    }
+
+    .image-container{
+        display:none;
+    }
+
+    .column-about-me{
+        padding-left:1rem;
+    }
+}
+
+@include media-breakpoint-down(lg){
+    .my-banner{
+        .profile-img{
+            margin:auto;
+        }
+    }
+
+    .introducing{
+        margin-top: 0%;
+    }
+
+    .link-profile-banner{
+        padding: 3rem;
+    }
+}
+/************************************/

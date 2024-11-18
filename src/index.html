@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Herizo RANDRIANARIVONJY</title>
   <link rel="stylesheet" href="./scss/styles.scss" />
-  <link rel="stylesheet" href="./scss/home.scss" />
+  <!--<link rel="stylesheet" href="./scss/home.scss" />-->
   <script type="module" src="./js/main.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-primary-main">
+  <nav class="navbar navbar-expand-lg bg-primary-main fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">code .MDG</a>
+      <a class="navbar-brand" href="#" id="">code .MDG</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,21 +23,23 @@
         <div class="p-2">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link fw-bold" aria-current="page" href="#banner">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="#">About Me</a>
+              <a class="nav-link fw-bold" href="#about-me">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold" href="#">Projects</a>
+              <a class="nav-link fw-bold" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" aria-disabled="true">Contact</a>
+              <a class="nav-link fw-bold" href="#skills" aria-disabled="true">Skills</a>
             </li>
           </ul>
         </div>
         <div class="p-2">
-          <a name="" id="" class="btn btn-outline-download p-2" href="#" role="button">
+          <a target="_blank" class="btn btn-outline-download p-2"
+            href="https://docs.google.com/document/d/1wwzSuKDb09zRtFW3r0ouuI45ED2lZNGdPxEsMwzaymY/edit?tab=t.0"
+            role="button">
             <svg width="20" height="20" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M15.75 2.28702C15.75 1.4405 14.968 0.756592 14 0.756592C13.032 0.756592 12.25 1.4405 12.25 2.28702V13.8943L8.23594 10.3839C7.55234 9.78611 6.44219 9.78611 5.75859 10.3839C5.075 10.9818 5.075 11.9526 5.75859 12.5504L12.7586 18.6721C13.4422 19.27 14.5523 19.27 15.2359 18.6721L22.2359 12.5504C22.9195 11.9526 22.9195 10.9818 22.2359 10.3839C21.5523 9.78611 20.4422 9.78611 19.7586 10.3839L15.75 13.8943V2.28702ZM3.5 17.5913C1.56953 17.5913 0 18.9639 0 20.6521V22.1826C0 23.8708 1.56953 25.2434 3.5 25.2434H24.5C26.4305 25.2434 28 23.8708 28 22.1826V20.6521C28 18.9639 26.4305 17.5913 24.5 17.5913H18.9492L16.4719 19.7578C15.1047 20.9534 12.8898 20.9534 11.5227 19.7578L9.05078 17.5913H3.5ZM23.625 20.2695C23.9731 20.2695 24.3069 20.3905 24.5531 20.6057C24.7992 20.821 24.9375 21.1129 24.9375 21.4174C24.9375 21.7218 24.7992 22.0137 24.5531 22.229C24.3069 22.4442 23.9731 22.5652 23.625 22.5652C23.2769 22.5652 22.9431 22.4442 22.6969 22.229C22.4508 22.0137 22.3125 21.7218 22.3125 21.4174C22.3125 21.1129 22.4508 20.821 22.6969 20.6057C22.9431 20.3905 23.2769 20.2695 23.625 20.2695Z"
@@ -50,9 +52,9 @@
   </nav>
 
   <!-- BANNER -->
-  <div class="container my-banner">
-    <div class="row">
-      <div class="col-sm">
+  <div class="container my-banner" id="banner">
+    <div class="row flex-row-reverse">
+      <div class="col-sm order-2 order-sm-2 order-md-2">
         <div class="introducing">
           <p class="hello">
             Hello,</br>
@@ -62,12 +64,12 @@
             A passionate Fullstack Developer.
           </p>
         </div>
-        <div class="pt-5 d-grid gap-5 d-md-flex justify-content-center">
+        <div class="pt-5 d-grid gap-5 d-md-flex justify-content-center link-profile-banner">
           <a class="btn btn-light btn-contact me-md-2 custom-shadow" href="#contact">Contact</a>
-          <a href="#" class="btn btn-purple custom-shadow"> Projects</a>
+          <a href="#projects" class="btn btn-purple custom-shadow"> Projects</a>
         </div>
       </div>
-      <div class="col-sm intro-pic p-5">
+      <div class="col-sm order-1 order-sm-1 order-md-1 intro-pic p-5">
         <div class="profile-img" style="background-image: url(images/profile.jpg);">
         </div>
       </div>
@@ -99,10 +101,10 @@
 
   <div class="divider p-5"></div>
 
-  <div class="jumbotron about-me mt-5">
+  <div class="jumbotron about-me mt-5" id="about-me">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-8 order-1 order-sm-2 order-md-2">
           <div class="column-about-me">
             <div class="rect"></div>
             <p class="a-bit-about-me">A Bit About Me...</p>
@@ -114,7 +116,7 @@
             <p class="email-git">Herizo R.</p>
           </div>
         </div>
-        <div class="col-sm-4 image-column">
+        <div class="col-sm-4 image-column  order-2 order-sm-1 order-md-1 ">
           <div class="image-container">
             <img src="images/question-mark.png" class="fit-image" alt="mobile">
           </div>
@@ -125,7 +127,7 @@
 
   <div class="divider p-5"></div>
   <!-- timeline projects -->
-  <div class="container container-skill">
+  <div class="container container-skill" id="projects">
     <div class="row pb-5">
       <span class="skill">Projects</span>
     </div>
@@ -206,81 +208,126 @@
   </div>
   </div>
   <div class="divider p-5"></div>
-  <div class="container container-skill">
+  <div class="container container-skill" id="skills">
     <div class="row gy-5 pb-5"><span class="skill">Skills</span></div>
-    <div class="row gx-5 pb-5 text-center">
-      <div class="col-sm-1"></div>
-      <div class="col-sm skill-box">
+    <div class="row gx-5 gy-5 pb-5 text-center">
+      <div class="col-6 col-sm skill-box">
         <!-- <p class="skill-title">HTML</p> -->
         <img src="images/icons/html.png" alt="HTML" class="skill-image">
       </div>
-      <div class="col-sm skill-box">
+      <div class="col-6 col-sm skill-box">
         <!-- <p class="skill-title">CSS</p> -->
         <img src="images/icons/css.png" class="skill-image" alt="CSS">
       </div>
-      <div class="col-sm skill-box">
+      <div class="col-6 col-sm skill-box">
         <!-- <p class="skill-title">SCSS</p> -->
         <img src="images/icons/scss.png" class="skill-image" alt="scss" />
       </div>
-      <div class="col-sm skill-box">
+      <div class="col-6 col-sm skill-box">
         <img src="images/icons/js.png" class="skill-image" alt="Javascript" />
       </div>
     </div>
-    <div class="row gx-5 pb-5 text-center">
-      <div class="col-sm-1"></div>
-      <div class="col-sm skill-box">
+    <div class="row gx-5 gy-5 pb-5 text-center">
+      <div class="col-6 col-sm skill-box">
         <!-- <p class="skill-title">PHP</p> -->
         <img src="images/icons/php.png" class="skill-image" alt="PHP" />
       </div>
-      <div class="col-sm skill-box">
+      <div class="col-6 col-sm skill-box">
         <!-- <p class="skill-title">Symfony</p> -->
         <img src="images/icons/symfony.png" class="skill-image-128" alt="Symfony" />
       </div>
-      <div class="col-sm skill-box">
+      <div class="col-6 col-sm skill-box">
         <!-- <p class="skill-title">Laravel</p> -->
         <img src="images/icons/laravel.png" class="skill-image" width="128" alt="Laravel" />
         <p class="skill-title">Laravel</p>
       </div>
-      <div class="col-sm skill-box">
+      <div class="col-6 col-sm skill-box">
         <!-- <p class="skill-title">Java/Spring-boot</p> -->
         <img src="images/icons/java.png" class="skill-image" alt="Java" />
       </div>
     </div>
-    <div class="row gx-5 text-center">
-      <div class="col-sm-1"></div>
-      <div class="col-sm skill-box">
+    <div class="row gx-5 gy-5 text-center">
+      <div class="col-6 col-sm skill-box">
         <!-- <p class="skill-title">PHP</p> -->
         <img src="images/icons/reactjs.png" class="skill-image" alt="ReactJS" />
       </div>
-      <div class="col-sm skill-box">
+      <div class="col-6 col-sm skill-box">
         <!-- <p class="skill-title">Sql</p> -->
         <img src="images/icons/sql.png" class="skill-image" alt="sql" />
       </div>
-      <div class="col-sm skill-box">
+      <div class="col-6 col-sm skill-box">
       </div>
-      <div class="col-sm skill-box">
+      <div class="col-6 col-sm skill-box">
       </div>
     </div>
   </div>
   <div class="divider p-5"></div>
   <div class="container">
-    <footer class="py-3 my-4">
+    <footer class="py-3 my-4" id="contact">
       <div class="d-flex justify-content-between py-4 my-4 border-top">
-        <p>© 2021 Company, Inc. All rights reserved.</p>
+        <p>© 2024 codeMDG, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
           <li class="ms-3">
-            <a class="link-dark" href="#">
-              <svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use>
+            <a class="link-dark" href="https://www.linkedin.com/in/herizo-randrianarivonjy-3a095995/" title="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="7.025 7.025 497.951 497.95">
+                <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-974.482" y1="1306.773" x2="-622.378"
+                  y2="1658.877" gradientTransform="translate(1054.43 -1226.825)">
+                  <stop offset="0" stop-color="#2489be" />
+                  <stop offset="1" stop-color="#0575b3" />
+                </linearGradient>
+                <path
+                  d="M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z"
+                  fill="url(#a)" />
               </svg>
             </a>
           </li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg></a></li>
+          <li class="ms-3">
+            <a class="link-dark" href="mailto:rivoherizo2003@gmail.com">
+              <svg height="30" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 49.4 512 399.4200000000001">
+                <g fill="none" fill-rule="evenodd">
+                  <g fill-rule="nonzero">
+                    <path d="M34.91 448.818h81.454V251L0 163.727V413.91c0 19.287 15.622 34.91 34.91 34.91z"
+                      fill="#4285f4" />
+                    <path d="M395.636 448.818h81.455c19.287 0 34.909-15.622 34.909-34.909V163.727L395.636 251z"
+                      fill="#34a853" />
+                    <path d="M395.636 99.727V251L512 163.727v-46.545c0-43.142-49.25-67.782-83.782-41.891z"
+                      fill="#fbbc04" />
+                  </g>
+                  <path d="M116.364 251V99.727L256 204.455 395.636 99.727V251L256 355.727z" fill="#ea4335" />
+                  <path d="M0 117.182v46.545L116.364 251V99.727L83.782 75.291C49.25 49.4 0 74.04 0 117.18z"
+                    fill="#c5221f" fill-rule="nonzero" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://gitlab.com/rivoherizo2003">
+              <svg height="30" viewBox="-.1 .5 960.2 923.9" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m958.9 442.4c1.1 26.1-2 52.1-9.2 77.2-7.1 25.1-18.3 48.8-33.1 70.3a240.43 240.43 0 0 1 -53.6 56.2l-.5.4-199.9 149.8-98.3 74.5-59.9 45.2c-3.5 2.7-7.4 4.7-11.5 6.1s-8.5 2.1-12.9 2.1c-4.3 0-8.7-.7-12.8-2.1s-8-3.4-11.5-6.1l-59.9-45.2-98.3-74.5-198.7-148.9-1.2-.8-.4-.4c-20.9-15.7-39-34.7-53.8-56.2s-26-45.3-33.2-70.4c-7.2-25.1-10.3-51.2-9.2-77.3 1.2-26.1 6.5-51.8 15.8-76.2l1.3-3.5 130.7-340.5q1-2.5 2.4-4.8 1.3-2.3 3.1-4.3 1.7-2.1 3.7-3.9 2-1.7 4.2-3.2c3.1-1.9 6.3-3.3 9.8-4.1 3.4-.9 7-1.3 10.5-1.1 3.6.2 7.1.9 10.4 2.2 3.3 1.2 6.5 3 9.3 5.2q2 1.7 3.9 3.6 1.8 2 3.2 4.3 1.5 2.2 2.6 4.7 1.1 2.4 1.8 5l88.1 269.7h356.6l88.1-269.7q.7-2.6 1.9-5 1.1-2.4 2.6-4.7 1.4-2.2 3.2-4.2 1.8-2 3.9-3.7c2.8-2.2 5.9-3.9 9.2-5.2 3.4-1.2 6.9-1.9 10.4-2.1 3.6-.2 7.1.1 10.6 1 3.4.9 6.7 2.3 9.7 4.2q2.3 1.4 4.3 3.2 2 1.7 3.7 3.8 1.7 2.1 3.1 4.4 1.3 2.3 2.3 4.8l130.5 340.6 1.3 3.5c9.3 24.3 14.6 50 15.7 76.1z"
+                  fill="#e24329" />
+                <path
+                  d="m959 442.5c1.1 26-2 52.1-9.2 77.2s-18.4 48.9-33.2 70.4-32.9 40.5-53.7 56.2l-.5.4-199.9 149.8s-84.9-64.1-182.5-138l286.5-216.8c12.9-9.7 26.4-18.6 40.3-26.8 13.9-8.3 28.3-15.7 43-22.3 14.8-6.6 29.9-12.5 45.2-17.4 15.4-5 31-9.1 46.9-12.4l1.3 3.5c9.3 24.4 14.6 50.1 15.8 76.2z"
+                  fill="#fc6d26" />
+                <path
+                  d="m480 658.5c97.6 73.7 182.6 138 182.6 138l-98.3 74.5-59.9 45.2c-3.5 2.7-7.4 4.7-11.5 6.1s-8.5 2.1-12.9 2.1c-4.3 0-8.7-.7-12.8-2.1s-8-3.4-11.5-6.1l-59.9-45.2-98.3-74.5s84.9-64.3 182.5-138z"
+                  fill="#fca326" />
+                <path
+                  d="m480 658.3c-97.7 73.9-182.5 138-182.5 138l-198.7-148.9-1.2-.8-.4-.4c-20.9-15.7-39-34.7-53.8-56.2s-26-45.3-33.2-70.4c-7.2-25.1-10.3-51.2-9.2-77.3 1.2-26.1 6.5-51.8 15.8-76.2l1.3-3.5c15.9 3.3 31.5 7.4 46.9 12.4 15.3 5 30.4 10.8 45.2 17.5 14.7 6.6 29.1 14.1 43 22.3s27.3 17.2 40.3 26.9z"
+                  fill="#fc6d26" />
+              </svg>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a href="https://github.com/rivoherizo2003" class="link-dark">
+              <svg height="30" viewBox="0 -3.1 2490.3 2493" width="30" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="1245.2" cy="1243.4" fill="#fff" rx="1217.6" ry="1246.5" />
+                <path
+                  d="m1245.2 1.6c-687.6 0-1245.2 557.4-1245.2 1245.1 0 550.2 356.8 1016.9 851.5 1181.5 62.2 11.5 85.1-27 85.1-59.9 0-29.7-1.2-127.8-1.7-231.8-346.4 75.3-419.5-146.9-419.5-146.9-56.6-143.9-138.3-182.2-138.3-182.2-113-77.3 8.5-75.7 8.5-75.7 125 8.8 190.9 128.3 190.9 128.3 111.1 190.4 291.3 135.3 362.3 103.5 11.2-80.5 43.4-135.4 79.1-166.5-276.6-31.5-567.3-138.3-567.3-615.4 0-135.9 48.6-247 128.3-334.2-12.9-31.3-55.5-157.9 12.1-329.4 0 0 104.6-33.5 342.5 127.6 99.3-27.6 205.8-41.4 311.7-41.9 105.8.5 212.4 14.3 311.9 41.9 237.7-161.1 342.1-127.6 342.1-127.6 67.8 171.5 25.1 298.2 12.2 329.5 79.8 87.2 128.1 198.3 128.1 334.2 0 478.2-291.3 583.6-568.6 614.4 44.7 38.6 84.5 114.4 84.5 230.6 0 166.6-1.4 300.7-1.4 341.7 0 33.1 22.4 72 85.5 59.7 494.5-164.8 850.8-631.4 850.8-1181.4 0-687.7-557.5-1245.1-1245.1-1245.1"
+                  fill="#5c6bc0" />
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
   </div>
