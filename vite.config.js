@@ -5,6 +5,7 @@ export default {
   build: {
     outDir: '../docs'
   },
+  base: "",
   server: {
     port: 8080
   }
