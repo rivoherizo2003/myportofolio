@@ -74,7 +74,7 @@ body{
 
 .about-me{
     background-color: #0F1221;
-    height: 493px;
+    height: auto;
 }
 
 .column-about-me{
@@ -287,6 +287,10 @@ body{
 
     .link-profile-banner{
         padding: 3rem;
+    }
+
+    .image-column{
+        display:none;
     }
 }
 /************************************/
