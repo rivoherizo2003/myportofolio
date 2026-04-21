@@ -1,3 +1,4 @@
-import "../scss/styles.scss";
 
-import * as bootstrap from "bootstrap";
+
+import "../css/main.css";
+import "../js/three.js";

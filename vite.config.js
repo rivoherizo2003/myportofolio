@@ -1,12 +1,15 @@
-import { resolve } from 'path'
+import { resolve } from "path";
+import tailwindcss from "@tailwindcss/vite";
+import { defineConfig } from "vite";
 
-export default {
-  root: resolve(__dirname, 'src'),
+export default defineConfig({
+  root: resolve(__dirname, "src"),
   build: {
-    outDir: '../docs'
+    outDir: "../docs",
   },
   base: "",
   server: {
-    port: 8080
-  }
-}
+    port: 8080,
+  },
+  plugins: [tailwindcss()],
+});
